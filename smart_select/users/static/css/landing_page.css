@@ -1,0 +1,180 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fff;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #226a8e;
+}
+.logo img {
+    height: 50px;
+    margin-right: 10px; /* Add spacing between the logo and text */
+}
+.menu-icon i {
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+}
+
+/* Navbar Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000000; /* Default text color */
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px; /* Button-like appearance */
+    border-radius: 5px; /* Slight rounding */
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #226a8e; /* Change text color on hover */
+}
+
+/* About Link - Styled Like Button */
+.about-link {
+    text-decoration: none;
+    color: #000000; /* White text */
+    background-color: #ffffff; /* Default blue background */
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.signin-link:hover {
+    background-color: #ffffff; /* Darker blue on hover */
+    color: #226a8e; /* White text on hover */
+}
+
+/* Sign In Link - Styled Like Button */
+.signin-link {
+    text-decoration: none;
+    color: #000000; /* White text */
+    background-color: #ffffff; /* Default blue background */
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.signin-link:hover {
+    background-color: #ffffff; /* Darker blue on hover */
+    color: #226a8e; /* White text on hover */
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    margin: 100px 20px;
+}
+.hero h1 {
+    font-size: 3rem;
+    line-height: 1.4;
+    color: #333;
+}
+.hero .highlight {
+    color: #226a8e;
+}
+.hero p {
+    margin: 20px 0;
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+
+/* CTA Button */
+.cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: #fff; /* White background */
+    color: #333; /* Black text */
+    text-decoration: none;
+    font-size: 1.5rem;
+    border-radius: 5px; /* Reduced roundness */
+    box-shadow: 0 8px 16px rgb(0, 0, 0,0.4); /* Increased shadow effect */
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+}
+/* Button Hover Effect */
+.cta-button:hover {
+    background-color: #226a8e; /* Blue background on hover */
+    color: #fff; /* White text on hover */
+    transform: translateY(-6px); /* Uplift the button */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4); /* Stronger shadow effect on hover */
+}
+/* Button Active (Click) Effect */
+.cta-button:active {
+    background-color: #226a8e; /* Darker blue on click */
+    color: #fff; /* White text on click */
+    transform: translateY(-3px); /* Slightly less uplifted on click */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Slightly stronger shadow on click */
+}
+
+/* Footer */
+.footer-dots {
+    text-align: center;
+    margin-top: 30px;
+}
+.footer-dots .dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    background-color: #ddd;
+    border-radius: 50%;
+}
+footer p {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Animations */
+@keyframes highlight-fade {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.6;
+    }
+}
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}

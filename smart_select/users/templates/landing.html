@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Select</title>
+
+  <!-- Load CSS -->
+  <link rel="stylesheet" href="{% static 'css/landing_page.css' %}">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="{% static 'images/landing_logo.png' %}" alt="Smart Select Logo" style="height: 50px;">
+        Smart Select
+      </div>
+      <ul class="nav-links">
+        <li><a href="{% url 'about' %}" class="about-link">About</a></li>
+      </ul>
+      <div class="menu-right">
+        <a href="{% url 'login' %}" class="signin-link">Sign In</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Your <span class="highlight">Personalized </span><br> Selection Assistant.</h1>
+      <p>Smart Select empowers users to <strong>compare, analyze, and select</strong> the right product or service with ease and confidence.</p>
+      <a href="{% url 'login' %}" class="cta-button">Get Started</a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-dots">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+    <p>&copy; 2025 Smart Recommender. All rights reserved.</p>
+  </footer>
+
+  <!-- Load JavaScript at the bottom for better performance -->
+  <script src="{% static 'js/landing_script.js' %}"></script>
+
+</body>
+</html>
